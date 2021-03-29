@@ -92,8 +92,8 @@ class _HomeState extends State<Home> {
 
                         ListTile(
                           leading: Icon(Icons.cloud),
-                          title: Text(currently!=null?currently.toString():"Loading"),
-                          trailing: Text("weather"),
+                          title: Text("Weather"),
+                          trailing: Text(currently!=null?currently.toString():"Loading"),
                         ),
 
                         ListTile(
