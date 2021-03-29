@@ -68,9 +68,9 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text("Current In Dhaka",style: new TextStyle(fontSize: 14,color: Colors.white),),
+                Text("Current In Pabna",style: new TextStyle(fontSize: 14,color: Colors.white),),
                 Text(temp!=null? temp.toString()+"\u00B0" :"Loading",style: new TextStyle(fontSize: 40,color: Colors.white),),
-                Text("Rain",style: new TextStyle(fontSize: 14,color: Colors.white),),
+                Text(currently!=null? currently.toString(): "Loading",style: new TextStyle(fontSize: 14,color: Colors.white),),
 
               ],
             ),
@@ -87,24 +87,24 @@ class _HomeState extends State<Home> {
                         ListTile(
                           leading: Icon(Icons.device_thermostat),
                           title: Text("Temperature"),
-                          trailing: Text("52\u00B0"),
+                          trailing: Text(temp!=null? temp.toString()+"\u00B0" :"Loading"),
                         ),
 
                         ListTile(
                           leading: Icon(Icons.cloud),
-                          title: Text("Weather"),
+                          title: Text(currently!=null?currently.toString():"Loading"),
                           trailing: Text("weather"),
                         ),
 
                         ListTile(
                           leading: Icon(Icons.wb_sunny),
-                          title: Text("Humidity"),
+                          title: Text(humidity!=null?humidity.toString():"Loading"),
                           trailing: Text("70"),
                         ),
 
                         ListTile(
                           leading: Icon(Icons.filter_drama_sharp),
-                          title: Text("Wind Speed"),
+                          title: Text(windSpeed!= null?windSpeed.toString():"Loading"),
                           trailing: Text("25"),
                         ),
                       ],
