@@ -41,7 +41,7 @@ class _HomeState extends State<Home> {
         this.temp = results['main']['temp'];
         this.description = results['weather'][0]['description'];
         this.currently =results['weather'][0]['main'];
-        this.humidity = results[main]['humidity'];
+        this.humidity = results['main']['humidity'];
         this.windSpeed = results['wind']['speed'];
 
         //print(temp);
