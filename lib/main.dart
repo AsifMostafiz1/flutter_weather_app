@@ -98,8 +98,8 @@ class _HomeState extends State<Home> {
 
                         ListTile(
                           leading: Icon(Icons.wb_sunny),
-                          title: Text(humidity!=null?humidity.toString():"Loading"),
-                          trailing: Text("70"),
+                          title: Text("Humidity"),
+                          trailing: Text(humidity!=null?humidity.toString():"Loading"),
                         ),
 
                         ListTile(
