@@ -104,8 +104,8 @@ class _HomeState extends State<Home> {
 
                         ListTile(
                           leading: Icon(Icons.filter_drama_sharp),
-                          title: Text(windSpeed!= null?windSpeed.toString():"Loading"),
-                          trailing: Text("25"),
+                          title: Text("Wind Speed"),
+                          trailing: Text(windSpeed!= null?windSpeed.toString():"Loading"),
                         ),
                       ],
                     ),
